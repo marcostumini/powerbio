@@ -1,0 +1,594 @@
+/*---------------------------------BASE----------------------------------------*/
+	@font-face{
+    font-family: "Montserrat-Bold";
+    src:url(Montserrat-Bold.ttf); 
+	}
+
+	@font-face{
+    font-family: "Montserrat-BlackItalic";
+    src:url(Montserrat-BlackItalic.ttf); 
+	}
+
+	@font-face{
+    font-family: "Myriad-Pro-Regular";
+    src:url(Myriad-Pro-Regular.ttf); 
+	}
+
+
+
+	html{
+		height: 100%;
+		width: 100%;
+	}
+
+	body{
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	
+	.btn-success{
+		background-color: #2E6515;
+		border-radius: 15px 15px 15px 15px;
+	}
+
+	/*FUENTES*/
+	.titulos{
+		font-family: Montserrat-BlackItalic;
+	}
+
+	.botones{
+		font-family: Montserrat-Bold;
+	}
+
+	.cuerpo{
+		font-family: Myriad-Pro-Regular;
+	}
+
+
+/*---------------------------------INCLUDES-----------------------------------*/
+
+/*NAVBAR*/
+
+	@media (max-width: 300px) {  
+		#logo-nav{ width:11em;} 
+	 }
+
+	@media (min-width: 301px) {  
+		#logo-nav{ width:15em;} 
+	  }
+	  #navbarTogglerDemo02 {
+		  box-shadow: 0 0.5rem 1rem #fff;
+		  background-color: #2E6515;
+		  transition: background-color 0.2s ease;
+		}
+		#navbarTogglerDemo02 .navbar-nav .nav-item .nav-link {
+		  color: #fff;
+		  /*font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+		  font-weight: 700;
+		  font-size: 0.9rem;
+		  padding: 0.75rem 0;
+		}
+	 
+	@media (min-width: 775px) {  
+		#logo-nav{ width:20em;} 
+		#navbarTogglerDemo02 {
+		  box-shadow: 0 0.5rem 1rem #fff;
+		  background-color: #2E6515;
+		  transition: background-color 0.2s ease;
+		}
+		#navbarTogglerDemo02 .navbar-nav .nav-item .nav-link {
+		  color: #fff;
+		  /*font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+		  font-weight: 700;
+		  font-size: 0.9rem;
+		  padding: 0.75rem 0;
+		}
+	 }
+		
+	@media (min-width: 992px) {
+	  #logo-nav{ width:25em;} 
+	  #navbarTogglerDemo02 {
+		  box-shadow: 0 0.5rem 1rem #fff;
+		  background-color: #2E6515;
+		  transition: background-color 0.2s ease;
+		}
+
+	/*REDONDEO BORDES*/
+	.barra{
+		border-radius: 10px 10px 10px 10px;
+       	overflow: hidden;
+       	margin-bottom: 10px;
+	}
+		
+
+	  /*COLOR DE LETRAS DEL MENU*/
+	  #navbarTogglerDemo02 .navbar-nav .nav-item .nav-link {
+	    color: #fff;
+	    padding: 0 1rem;
+	    transition: all 300ms
+	  }
+	  
+	}
+
+	.nav-color .navbar-nav .nav-link:hover{
+	background-color: #7ec300;
+	transition: all 300ms
+	}
+
+/*-----------------------------------INDEX-----------------------------------*/
+/*CAROUSEL*/
+	@media (min-width: 575px) {
+	  .carousel-inner{
+	    height: 300px;
+	  }
+	}
+
+	@media (min-width: 991px) {
+	  .carousel-inner{
+	    height: 400px;
+	  }
+	}
+
+	#carouselExampleIndicators{
+		margin-bottom: 5em;
+	}
+
+
+	/*Texto Index*/
+	.texto-index { 
+		text-align: center;
+		padding-bottom: 5em;
+		font-size: 1.5em;
+	}
+
+	
+
+/*VIDEO*/
+
+	@media (max-width: 720px) {
+		#video-index{
+			background-image: url(../img/index/fondo-video.png);
+			background-image: center ;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#video{
+			width: 70%; 
+			height: 300px;
+			margin-bottom: 2em;
+			margin-top: 2em;
+		}
+
+		#p-video-index{
+			color: white;
+			font-size: 2em;
+
+		}
+	}
+	@media (min-width: 720px) {
+		#video-index{
+			background-image: url(../img/index/fondo-video.png);
+			background-image: center !important;
+			background-repeat: repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#video{
+			width: 60%; 
+			height: 500px;
+			margin-bottom: 2em;
+			margin-top: 2em;
+		}
+
+		#p-video-index{
+			color: white;
+			font-size: 2em;
+
+		}
+	}
+	@media (min-width: 900px) {
+		#video-index{
+			background-image: url(../img/index/fondo-video.png);
+			background-image: center !important;
+			background-repeat: repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#video{
+			width: 60%; 
+			height: 500px;
+			margin-bottom: 2em;
+			margin-top: 2em;
+		}
+
+		#p-video-index{
+			color: white;
+			font-size: 2em;
+
+		}
+	}
+
+/*FOTO Y TEXTO*/
+	.img-index{
+		padding-top: 5em;
+		padding-bottom: 5em;
+	}
+
+	.text-index-2{
+		font-size: 1.1em;
+	}
+
+.wp-index-ico{
+	font-size: 3em; 
+	color: white; 
+	background-color: #62aa2c;
+	padding: 10px;
+}
+
+/*MAPA*/
+	
+	@media (min-width: 300px) {
+		#mapa-inicio{
+			background-image: url(../img/index/fondo-mapa-chico.png);
+			background-repeat: no-repeat ;
+			background-image: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		#mapamapa{
+			width: 70%;
+		}
+		#p-mapa-index{
+			color: white;
+			font-size: 2em;
+			padding-top: 1.5em;
+		}
+
+		.row-mapa-dir{
+			color: #fff;
+			margin-top: 1.5em;
+		}
+
+		.p-mapa-dir{
+			font-size: 1em;
+		}
+	}
+	@media (min-width: 700px) {
+		#mapa-inicio{
+			background-image: url(../img/index/fondo-mapa-chico.png);
+			background-repeat: no-repeat ;
+			background-image: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		#mapamapa{
+			width: 70%;
+		}
+		#p-mapa-index{
+			color: white;
+			font-size: 2em;
+			padding-top: 1.5em;
+		}
+
+		.row-mapa-dir{
+			color: #fff;
+			margin-top: 1.5em;
+		}
+
+		.p-mapa-dir{
+			font-size: 1.25em;
+		}
+	}
+
+	@media (min-width: 991px) {
+		#mapa-inicio{
+			background-image: url(../img/index/fondo-mapa-chico.png);
+			background-repeat: no-repeat;
+			background-image: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		#mapamapa{
+			width: 70%;
+		}
+		#p-mapa-index{
+			color: white;
+			font-size: 2em;
+			padding-top: 2em;
+		}
+
+		.row-mapa-dir{
+			color: white;
+			margin-top: 3em;
+		}
+
+		.p-mapa-dir{
+			font-size: 1.5em;
+		}
+	}
+	
+	
+
+/*COPIRYGHT*/
+	.index-copy{
+		color: white;
+		font-size: 2em;
+	}
+
+/*FOOTER*/
+	#footer{
+		background-color: #090;
+		text-align: center
+	}
+
+	.ico-index{
+		font-size: 3em;
+		color: white;
+	}
+
+
+	@media (min-width: 300px) {
+		.ico-foot{
+			font-size: 1em;
+		}
+	}
+	@media (min-width: 700px) {
+		.ico-foot{
+			font-size: 2em;
+		}
+	}
+	.alto-footer{
+		height: 80px;
+	}
+
+
+
+/*-----------------------------------PRODUCTOS-----------------------------------*/
+	.titulo-productos{
+		
+		margin-right: 20%;
+	}
+
+	#trigger-1, #trigger-2{
+	  border: 1px solid #7ec300;
+	  font-size: 1.25em;
+	}
+	#contenido-1{
+	  display:none;
+	  position:relative;
+	  background: #2E6515;
+	  color:white;
+	  width: 100%;
+	  padding: 20px;
+	  height: 1100px
+	}
+
+	#contenido-2{
+	  display:none;
+	  position:relative;
+	  background: #2E6515;
+	  color:white;
+	  width: 100%;
+	  padding: 20px;
+	  height: 500px
+	}
+
+
+	@media (min-width: 300px) {
+		.titulo-productos{
+			font-size: 1em;
+		}
+		#contenido-1{
+			height: 70%;
+		}
+		#contenido-2{
+			height: 45%;
+		}
+	}
+
+	@media (min-width: 500px) {
+		.titulo-productos{
+			font-size: 1em;
+		}
+		#contenido-1{
+			height: 70%;
+		}
+		#contenido-2{
+			height: 35%;
+		}
+	}
+
+	@media (min-width: 767px) {
+		.titulo-productos{
+			font-size: 1em;
+		}
+		#contenido-1{
+			height: 60%;
+		}
+		#contenido-2{
+			height: 45%;
+		}
+	}
+
+	@media (min-width: 991px) {
+		.titulo-productos{
+			font-size: 1em;
+		}
+		#contenido-1{
+			height: 50%;
+		}
+		#contenido-2{
+			height: 40%;
+		}
+	}
+
+	@media (min-width: 1199px) {
+		.titulo-productos{
+			font-size: 1em;
+		}
+		#contenido-1{
+			height: 45%;
+		}
+		#contenido-2{
+			height: 30%;
+		}
+	}
+
+
+	.productos{
+		margin-top: 5em;
+	}
+
+	.prod-desc{
+		border: 1px solid #7ec300;
+	}
+
+	.segunda-fila{
+		margin-top: 10em;
+
+	}
+
+/*-----------------------------------BIODIESEL-----------------------------------*/
+@media (max-width: 1618px) {
+		#ventajas-bio{
+			background-image: url(../img/prensa/fondo-bio.png);
+			background-image: center ;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.tit-vent{
+			color: white;
+			font-size: 3em;
+
+		}
+
+		.txt-vent{
+			color: white;
+			font-size: 1em;
+		}
+	}
+	@media (min-width: 720px) {
+		#ventajas-bio{
+			background-image: url(../img/prensa/fondo-bio.png);
+			background-image: center !important;
+			background-repeat: repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.tit-vent{
+			color: white;
+			font-size: 3em;
+
+		}
+		.txt-vent{
+			color: white;
+			font-size: 1em;
+		}
+	}
+	@media (min-width: 900px) {
+		#ventajas-bio{
+			background-image: url(../img/prensa/fondo-bio.png);
+			background-image: center !important;
+			background-repeat: repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.tit-vent{
+			color: white;
+			font-size: 3em;
+
+		}
+		.txt-vent{
+			color: white;
+			font-size: 1em;
+		}
+	}
+
+
+/*-----------------------------------PREGUNTAS Y RESPUESTAS-----------------------------------*/
+.pregunta-bg{
+	color: white;
+	background-color: green;
+}
+
+.pregunta-txt{
+	color: white;
+}
+
+.pregunta-txt:hover{
+	color: lightgreen;
+}
+
+
+/*-----------------------------------CONTACTOS-----------------------------------*/
+@media (min-width: 00px) {
+		#contenedorContacto{
+		width:100%;
+        height:auto;
+        /*margin-left:10px;*/
+		}
+		#contenedorMapa{
+		width:100%;
+        height:auto;
+       /* margin-left:10px;*/
+		}
+		
+	}
+	@media (min-width: 500px) {
+		#contenedorContacto{
+		width:100%;
+        height:auto;
+        /*margin-left:10px;*/
+		}
+		#contenedorMapa{
+		width:100%;
+        height:auto;
+       /* margin-left:10px;*/
+		}
+		
+	}
+@media (min-width: 900px) {
+	#contenedorContacto{
+	width:50%;
+    height:auto;
+    /*margin-left:10px;*/
+	}
+	#contenedorMapa{
+	width:49%;
+    height:auto;
+    /*margin-left:10px;*/
+	}
+	
+}
+
+
+
